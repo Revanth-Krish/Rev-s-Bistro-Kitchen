@@ -329,15 +329,248 @@ p{
     text-align: center;
 }
 
-/* @media (max-width:450) {
+/* Responsive desgin using mediaQ */
 
-} */
+/* For mobile screens (up to 600px wide) */
+@media only screen and (max-width: 600px) {
+    .headerlist {
+        
+        flex-direction:column-reverse;
+        margin-left: 20px;
+        padding: 15px;
+    }
+    
+    .headerlist ul {
+        flex-direction: column;
+        padding-left: 0;
+        margin-left: 0;
+        padding: 0px;
+    }
 
-@media (max-width: 768px) {
-    .header {
-      padding: 20px;
+    #booktable {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
     }
-    .spl-dishes {
-      flex: 1 1 100%;
+
+    .herosection {
+        flex-direction: column;
+        align-items: center;
     }
-  }
+
+    #menubutton{
+        margin-left: 100px;
+        
+    }
+
+    #kitchenimage {
+        width: 300px;
+        height: auto;
+        border-radius: 150px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dishblocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishsmallblock {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #welimg {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .chefblock {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    #chefimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .subscribeblock {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #subimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .footertext {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .footertext div {
+        text-align: center;
+    }
+
+    #rights {
+        font-size: 12px;
+    }
+}
+
+/* For tablets (601px to 768px wide) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .headerlist {
+        margin-left: 50px;
+        padding: 15px;
+    }
+
+    .headerlist ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .herosection {
+        flex-direction: row;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .dishblocks {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .dishsmallblock {
+        width: 48%;
+    }
+
+    .welcome {
+        flex-direction: row;
+    }
+
+    #welimg {
+        width: 60%;
+    }
+
+    .chefblock {
+        flex-direction: row;
+    }
+
+    #chefimg {
+        width: 50%;
+    }
+
+    .subscribeblock {
+        flex-direction: row;
+    }
+
+    #subimg {
+        width: 50%;
+    }
+
+    .footertext {
+        flex-direction: row;
+    }
+}
+
+/* For desktop screens (769px and above) */
+@media only screen and (min-width: 769px) {
+    .headerlist {
+        margin-left: 100px;
+        padding: 25px;
+    }
+
+    .headerlist ul {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .dishblocks {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .dishsmallblock {
+        width: 23%;
+    }
+
+    .welcome {
+        flex-direction: row;
+    }
+
+    .chefblock {
+        flex-direction: row;
+    }
+
+    .subscribeblock {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    #subimg {
+        width: 50%;
+        height: auto;
+    }
+
+    .footertext {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+/* For larger screens (1300px and above) */
+@media only screen and (min-width: 1300px) {
+    .headerlist {
+        margin-left: 150px;
+        padding: 25px;
+    }
+
+    .headerlist ul {
+        gap: 90px;
+    }
+
+    .dishblocks {
+        gap: 30px;
+    }
+
+    .dishsmallblock {
+        width: 22%;
+    }
+
+    .welcome {
+        margin: 100px 150px;
+    }
+
+    .chefblock {
+        margin: 100px 150px;
+    }
+
+    .subscribeblock {
+        margin: 100px 150px;
+    }
+
+    .footertext {
+        margin: 100px 150px;
+    }
+}
