@@ -1,5 +1,8 @@
 body{
-    overflow-x: hidden
+    /* overflow-wrap:anywhere; */
+    overflow-x: hidden;
+    background-color: rgb(247, 238, 225);
+
 }
 
 h1{
@@ -231,10 +234,10 @@ p{
 #application {
 
     background-color: rgb(236, 243, 249);
-    padding: 5px 20px 10px 25px;
+    padding: 5px 80px 10px ;
     
     margin-bottom: 10px;
-    border-radius: 40px;
+    border-radius: 150px 0;
    
     
   }
@@ -263,7 +266,7 @@ p{
   }
   
   .form-group textarea{
-    width: 100%;
+    width: 90%;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -325,3 +328,16 @@ p{
     margin: 0;
     text-align: center;
 }
+
+/* @media (max-width:450) {
+
+} */
+
+@media (max-width: 768px) {
+    .header {
+      padding: 20px;
+    }
+    .spl-dishes {
+      flex: 1 1 100%;
+    }
+  }
